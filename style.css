@@ -62,7 +62,6 @@ header {
 }
 
 /* ----- RESPONSIVO ----- */
-
 @media (max-width: 820px) {
   .nav-links {
     position: fixed;
@@ -83,4 +82,107 @@ header {
   .hamburger {
     display: flex;
   }
+}
+
+/* ABOUT ME */
+.about-clean {
+  padding: 120px 40px;
+  background: #f7f7f7;
+  /* fundo neutro e elegante */
+  display: flex;
+  justify-content: center;
+}
+
+.about-clean-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-clean-photo img {
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-clean-content h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.about-clean-content p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.about-clean-list {
+  margin-top: 30px;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  font-size: 1.1rem;
+}
+
+.about-clean-list span {
+  font-weight: 600;
+  color: #111;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .about-clean-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-clean-photo img {
+    width: 260px;
+  }
+
+  .about-clean-list {
+    text-align: left;
+    margin: auto;
+    max-width: 250px;
+  }
+}
+
+/* COMPANIES */
+
+.company-section {
+    padding: 80px 40px;
+    text-align: center;
+    background: #fff;
+}
+
+.company-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.company-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+}
+
+.company-logos img {
+    max-width: 120px;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.company-logos img:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
